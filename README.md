@@ -4,6 +4,7 @@ This Project uses a combination of neural networks and NLP to process and predic
 <br>
 <br>
 To understand more about the code,different neural network architectures and its working, check out this survey paper written by me:
+<br>
 https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3769884
 <br>
 <br>
