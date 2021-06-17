@@ -4,5 +4,6 @@ This Project uses a combination of neural networks and NLP to process and predic
 
 To understand more about the code,different neural network architectures and its working, check out this survey paper written by me:
 https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3769884
+<br>
 Link to the dataset:
 https://www.kaggle.com/c/fake-news/data
