@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style type="text/css">
+
+		img{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+
+}
+
+.result-predict{
+
+    text-align: center;
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    height: 200px;
+    background-color: white;
+
+}
+
+
+.result-heading{
+
+    height: 75px;
+    text-align: left;
+    font-style: italic;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: red;
+    color: white;
+
+}
+
+	</style>
+	<title>Result Page</title>
+</head>
+<body>
+
+
+		{% if prediction == 1%}
+	     <img src="{{url_for('static' , filename='fake_news_predicted.jpg')}}"  alt="" class="img-predict" width="300" height="400">
+	    {% elif prediction == 0%}
+	     <img src="{{url_for('static' , filename='real_news_predicted.jpg')}}"  alt="" class="img-predict" width="300" height="400">
+	    {% endif %}
+
+	    <br>
+
+	    <div class="result-predict">
+
+	    	 <h1 class="result-heading">Predicted Result: </h1>
+             <br>
+
+
+		{% if prediction == 1%}
+
+		    {{"Fake News Detected"}}
+
+
+		 {% elif prediction == 0%}
+
+		    {{"You can trust this source!!"}}
+	     
+	    {% endif %}
+          
+	    </div>
+
+</body>
+</html>
